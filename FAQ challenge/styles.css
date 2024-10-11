@@ -39,15 +39,27 @@ body{
         width: 30px;
 }
 
-.pattern4{
+.pattern4,.pattern5 {
     width: 10%;
     position: relative;
     top: -0.4rem;
 }
 
+.pattern5{
+    display: none;
+}
+
+.disappear{
+    display: none;
+}
+
+.appear{
+    display: block;
+}
+
 
 .css-FAQ{
-    height: min(85%, 570px);
+    height: min(84%, 570px);
     width: min(80% , 345px);
     background-color: white;
     margin-inline: auto;
@@ -92,6 +104,19 @@ hr{
 .css-faq{
     display: flex;
     justify-content: space-around;
+}
+
+.css-answer{
+    width: 80%;
+    margin: 0 auto;
+    line-height: 1.5;
+    background-color:hsl(292, 16%, 49%);
+    color: white;
+    padding: 3% 6% 2% 6%;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    display: none;
 }
 
 @media (min-width: 600px)  and (max-width: 1199px){
