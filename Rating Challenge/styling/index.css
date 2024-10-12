@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange:#fb7413;
+    --white: #ffffff;
+    --rate-color: #3d3d3d;
+    --contain: #252d37;
+    --body: #121417;
+}
+
+body{
+ height: 100vh;
+ width: 100vw;
+background-color: var(--body);
+display: grid;
+place-items: center;
+}
+
+.container{
+    background-color: var(--contain);
+    width: min(90%,375px);
+    margin-inline: auto;
+    height:  min(60% , 350px);
+    border-radius: 12px;
+}
+
+.inner-container{
+ width: 90%;
+ margin: 0 auto;
+ height: 100%;
+ padding: 20px 0;
+}
+
+.star{
+    width: 35px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background-color: var(--rate-color);
+}
+
+.the-star{
+    width: 17px;
+    height: 17px;
+}
+
+h1{
+    color: var(--white);
+    margin: 5% 0;
+}
+
+#bio{
+    color: rgb(176, 171, 171);
+    margin-bottom: 6%;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 9%;
+    width: 100%;
+    margin-inline: auto;
+}
+
+.btn{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: none;
+    color: rgb(176, 171, 171);
+    background-color: var(--rate-color);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.submit{
+    padding: 4%;
+    width: 90%;
+    border-radius: 20px;
+    border: none;
+    margin-left: 1rem;
+    font-weight: bolder;
+    background-color: var(--orange);
+    color: var(--contain);
+}
+
+.illustration{
+    width: fit-content;
+    margin: 2rem auto 1rem auto;
+}
+
+.rating{
+    width: 50%;
+    font-weight: bolder;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--rate-color);
+    box-sizing: content-box;
+    padding: 2%;
+    border-radius: 20px;
+    color: var(--orange);
+}
+
+#thank-you{
+    text-align: center;
+}
+
+.bio{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    color: #858585;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+#container2{
+    height: min(65%, 400px);
+}
