@@ -12,12 +12,37 @@
     --body: #121417;
 }
 
+
 body{
  height: 100vh;
  width: 100vw;
 background-color: var(--body);
 display: grid;
 place-items: center;
+}
+
+#x > img{
+    width: 100%;
+}
+
+#x{
+    width: 10%;
+    border-radius: 50%;
+    border: none;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: var(--contain);
+}
+
+.body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--body);
+    display: grid;
+    place-items: center;
 }
 
 .container{
@@ -78,6 +103,11 @@ h1{
     font-size: 1.2rem;
 }
 
+.btn:hover{
+    background-color: var(--orange);
+    cursor: pointer;
+}
+
 .submit{
     padding: 4%;
     width: 90%;
@@ -87,6 +117,11 @@ h1{
     font-weight: bolder;
     background-color: var(--orange);
     color: var(--contain);
+}
+
+.submit:hover{
+    background-color: #f88635;
+    cursor: pointer;
 }
 
 .illustration{
@@ -121,4 +156,39 @@ h1{
 
 #container2{
     height: min(65%, 400px);
+    display: none;
+    position: relative;
+}
+
+@media (min-width: 1000px) {
+    body{
+        background-color: white;
+    }
+
+    .body{
+        width: min(70%,1440px);
+        height: 80%;
+    }
+
+    .container{
+        width: min(45%,1440px);
+        height:  min(80%,700px);
+    }
+
+    .inner-container{
+        width: min(80%,1000px);
+        padding: 4rem 0;
+       }
+
+       .hover{
+        background-color: var(--orange);
+       }
+
+}
+
+@media (min-width: 1500px) {
+    .body{
+        width: min(60%,1440px);
+        height: 80%;
+    }
 }
