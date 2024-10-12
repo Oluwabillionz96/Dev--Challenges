@@ -19,6 +19,7 @@ body{
 background-color: var(--body);
 display: grid;
 place-items: center;
+font-family: "Overpass", sans-serif;
 }
 
 #x > img{
@@ -35,6 +36,10 @@ place-items: center;
     top: 5%;
     right: 5%;
     background-color: var(--contain);
+}
+
+#x:hover{
+    cursor: pointer;
 }
 
 .body{
@@ -130,7 +135,7 @@ h1{
 }
 
 .rating{
-    width: 50%;
+    width: 70%;
     font-weight: bolder;
     margin: 0 auto;
     text-align: center;

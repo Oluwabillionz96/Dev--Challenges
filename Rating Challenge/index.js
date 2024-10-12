@@ -44,9 +44,40 @@ back.addEventListener('click', function(){
     function change() {
         page2.style.display = 'none';
         page1.style.display = 'block';
+        // span.innerText = '0';
       }
+      span.innerText = '0';
       for(let i = 0; i < ratingButtons.length; i++){
         ratingButtons[i].style.backgroundColor = '#3d3d3d';
+        ratingButtons[i].addEventListener('mouseover', function(event){
+            this.style.backgroundColor = '#fb7413'
+        })
+        ratingButtons[i].addEventListener('mouseout', function(){
+            this.style.backgroundColor = '#3d3d3d'
+        })
+        ratingButtons[i].addEventListener('click', function(event){
+            this.style.backgroundColor = '#fff'
+            if(event.type === 'click'){
+                ratingButtons[i].addEventListener('mouseout', function(){
+                    this.style.backgroundColor = '#fff'
+                if(span.innerHTML === '0'){
+                    submitButton.addEventListener('click',function(){
+                        span.innerHTML = ratingButtons[i].textContent;
+                    })
+                } 
+                // else {
+                //     span.innerHTML === '0';
+                // }
+                }) 
+            } else{
+                for(let i = 0; i < ratingButtons.length; i++){
+                    ratingButtons[i].style.backgroundColor = '#3d3d3d';
+                }
+            }
+            // console.log(event);
+        })
+
+       
     }
 
     submitButton.style.backgroundColor = '#fb7413'
