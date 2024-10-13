@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color:hsl(210, 46%, 95%);
+}
+
+.container{
+    width: min(85%, 375px);
+    height: min(90% , 540px);
+    background-color: white;
+    border-radius: 10px;
+    /* overflow: hidden; */
+}
+
+.img > img{
+width: 100%;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+/* height: 200px; */
+}
+
+.article{
+    width: 80%;
+    margin: 2rem auto 0 auto;
+}
+
+h1{
+    font-size: 0.95rem;
+    margin-bottom: 0.9rem;
+    color: hsl(214, 17%, 51%);
+    margin-top: -1rem;
+}
+
+.article > p{
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.profile > img{
+    width: min(80%, 48px) ;
+    border-radius: 50%;
+}
+
+.share{
+    width: 85%;
+    display: flex;
+    margin: 1.5rem auto 1rem auto;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    height: fit-content;
+    /* gap: 1rem; */
+}
+
+.share>*{
+    flex: 1;
+}
+
+.share > p{
+    flex: 3;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.share > p > span{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    margin-left: -3rem;
+}
+
+.share-icon{
+    height: 2rem;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    background-color: hsl(210, 46%, 95%);
+    flex: 0.5;
+    border-radius: 50%;
+}
+
+.icons{
+    display: none;
+}
