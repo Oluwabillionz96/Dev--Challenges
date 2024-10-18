@@ -5,240 +5,196 @@
 }
 
 html{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
     font-size: 20px;
 }
 
 body{
-    width: min(100vw,375px);
-    height: 100vh;
+    width: min(375px,100vw);
+    height: 120vh;
 }
 
-.container{
+/* Container styling */
+
+.css-container{
+    width: 100%;
+    height: 90%;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 80%;
 }
 
-
-#top,#bottom{
-    flex: 1;
-}
-
-#top{
+/* Top styling */
+.css-top{
+    flex: 1.5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    flex: 1.5;
 }
 
-#logo{
-    width: 50%;
-    text-align: center;
+/* Logo styling */
+
+.css-logo{
+   width: fit-content;
+   margin: 0 auto;
+   flex: 1;
+  position: absolute;
+  top: 5%;
 }
+/* Annoucement styling */
+
+.css-annoncement{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10%;
+    flex: 2;
+}
+
+/* H1 styling */
 
 h1{
-    font-size: 1.2rem;
-    color: hsl(0, 0%, 59%);
     font-weight: 300;
+    font-size: 1.6rem;
+    color: #969696;
 }
 
 h1 > span{
-color: black;
+font-weight: 600;
+color: #000;
 }
 
-#top p{
-    font-size: 0.7rem;
+/* annoucement p tag styling */
+.css-annoncement > p{
+    font-size: 1rem;
     font-weight: 300;
 }
 
-#logo > svg{
-width: 95%;
-height: 100%;
+/* Form styling */
+
+.css-form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+width: 80%;
+margin: 0 auto;
+flex: 2;
+gap: 10%;
 }
 
-#input-carrier,button{
-    width: 70%;
-    height: 13%;
-    border-radius: 15px;
-    overflow: hidden;
-    border: 1px solid hsl(0, 0%, 59%);
+/* Input box styling */
+.css-form > input, .css-btn{
+height: min(15vh,50px);
+border-radius: 30px;
 }
 
-button{
-    border: none;
-    background-color:  hsl(223, 87%, 63%);
-    color: white;
-    font-weight: 300;
-}
-
-input{
-    width: 100%;
-    height: 100%;
-    border: none;
-    outline: none;
-    padding: 0 10%;
+.css-form > input{
+ border-color: #969696;
+ outline: none;
+ padding: 0 10%;
 }
 
 
-bottom{
+/* button styling */
+.css-btn{
+display: flex;
+align-items: center;
+justify-content: center;
+border: none;
+background-color: #4f7df3;
+font-size: 0.7rem;
+font-weight: 300;
+color: white;
+}
+
+/* bottom styling */
+
+.css-bottom{
+    flex: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
-
-
-
-
-
-
-#bottom img{
+.css-image-holder{
     width: 100%;
 }
 
-#image-container{
-    width: 85%;
-    margin: 0 auto;
+.css-image-holder > img{
+    margin-left: 5%;
+    width: 90%;
+    display: inline-block;
+}
+/* Footer styling */
+
+footer{
+height: calc(120vh - 90%);
+box-sizing: content-box;
 }
 
-#logo{
-    width: 30%;
-    margin: 0 auto;
-}
+/* icon styling */
 
-
-.icon{
-    width: 3%;
-    position: relative;
-    top: 0.1rem;
-}
-
-.social{
-    width: 7%;
-    position: static;
-    /* margin-left: 1rem; */
-    padding: 0.3rem;
+.icons{
     box-sizing: content-box;
-    background-color: white;
-    border: 1px solid black;
+    width: 20px;
+    padding: 0.2rem;
+    border: 1px solid #969696;
     border-radius: 50%;
 }
 
-/* .social:hover{
-    background-color: hsl(223, 87%, 63%);
-} */
-
-
-.copyright{
-    /* display: none; */
-    font-size: 0.6rem;
-    text-align: center;
-    margin-top: 0.3rem;
-    color: hsl(0, 0%, 59%);
-}
-
-footer{
+.css-icon{
+    width: 40%;
+    margin: 0 auto;
     display: flex;
-    height: 20%;
-    align-items: center;
+    gap: 1rem;
     justify-content: center;
 }
 
-.wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    height: 50%;
+.css-copy-icon{
+    width: 5%;
+    position: relative;
+    top: 7px;
+    right: 2px;
 }
 
-.icon-holder{
-   text-align: center;
-    
+/* copy right styling */
+.css-copyright{
+    font-size: 0.5rem;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 
-@media (min-width: 481px) and (max-width: 1199px) {
+@media (min-width: 481px) and (max-width: 770px) {
+
     body{
-        width: min(100vw,1000px);
-        height: min(200vh,100vw);
+        width: min(600px,100vw);
+        height: min(120vh,800px);
     }
 
-    .container{
-        width: 80%;
-        margin: 0 auto;
-    }
+    .css-container{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+    }   
 
-    #top,#bottom{
-        margin: 0 auto;
-        width: 80%;
-    }
-
-    .social{
-        width: 2%;
-        position: static;
-        /* margin-left: 1rem; */
-        padding: 0.5rem;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 50%;
-    }
-}
-
-@media (min-width: 1200px) {
-    body{
-        width: min(100vw,1440px);
-        height: min(100vh,200vh);
-    }  
-    
-    .container{
-        width: 80%;
-        margin: 0 auto;
-        height: 100%
-    }
-
-    #top{
-        gap: 1rem;
+    .css-top{
         flex: 1;
+        position: relative;
     }
 
-    #logo{
-        width: 50%;
-        text-align: center;
-        display: grid;
-        place-items: center;
-    }
+    .css-logo{
+       top: 5%;
+     }
 
-    
-h1{
-    font-size: 2.5rem;
-    margin-top: 1rem;
-    margin-bottom: 0.56rem;
-}
-
-h1 > span{
-    font-weight: 600;
+     .css-copy-icon{
+        width: 5%;
+        position: relative;
+        top: 7px;
+        right: 2px;
     }
 }
-
-#top p{
-    font-size: 1rem;
-    font-weight: 300;
-    margin-bottom: 1rem;
-}
-
-#logo > svg{
-    width: 30%;
-    height: 26px;
-    }
-
-    #input-carrier,button{
-        width: 50%;
-        height: 50%;
-        display: inline-blockn x;
-        border-radius: 15px;
-        overflow: hidden;
-        border: 1px solid hsl(0, 0%, 59%);
-    }
