@@ -1,0 +1,21 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 20px;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+#root{
+  height: 100%;
+  width: 90%;
+  margin: 0 auto;
+}
